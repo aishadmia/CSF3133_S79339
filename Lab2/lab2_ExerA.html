@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hackathon 2026</title>
+</head>
+
+<body>
+<header>
+    <h1>Hackathon</h1>
+    <p>Empowering students innovation</p>
+</header>
+
+<nav>
+     <a href="#schedule">Schedule</a> | <a href="#register">Register</a> | <a href="#about">About</a>
+</nav>
+
+<!-- Section 1 : About the Event-->
+<section id="about">
+        <h2>About the Event</h2>
+            <article>
+                <h3>Keynote Speaker</h3>
+                <p>Dr Wan Nural Jawahir</p>
+            </article>
+             <article>
+                <h3>Coding Challenge</h3>
+                <p>Participants are required to find 4 teammates per group </p>
+            </article>
+</section>
+
+<!-- Section 2 : Event Schedule-->
+<section id="schedule">
+        <h2>Event Schedule</h2>
+        <!-- Table Event Schedule-->      
+        <table border="1">
+    <tr>
+        <th>Time</th>
+        <th>Activity</th>
+        <th>Venue</th>
+        <th>Person in Charge</th>
+    </tr>
+    <tr>
+        <td>8.00 AM - 9.00 AM</td>
+        <td>Registration</td>
+        <td rowspan="2">DSM</td>
+        <td>Urusetia Pendaftaran</td>
+    </tr>
+    <tr>
+        <td>9.00 AM - 10.00 AM</td>
+        <td>Opening & Briefing</td>
+        <td>Dr Nural</td>
+    </tr>
+    <tr>
+        <td>10.00 AM - 1.00 PM</td>
+        <td>Coding Phase 1</td>
+        <td>BYOD 1</td>
+        <td>Mentor James & Martin</td>
+    </tr>
+    <tr>
+        <td>1.00 AM - 2.00 PM</td>
+        <td colspan="4">Lunch Break</td>
+    </tr>
+     <tr>
+        <td>2.00 AM - 5.00 PM</td>
+        <td>Coding Phase 2</td>
+        <td>BYOD 1</td>
+        <td>Dr Ily</td>
+    </tr>
+      <tr>
+        <td>5.00 AM - 6.00 PM</td>
+        <td>Closing & Awards</td>
+        <td>DSM</td>
+        <td>Dean FSKM</td>
+    </tr>
+</table>
+
+
+<!-- Section 3 : About the Event-->
+<section id="register">
+        <h2>Registration</h2>
+            <form action="register.html" method="post">
+    <label for="fullname">Full Name :</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter full name"><br><br>
+
+    <label for="matric">Matric Number :</label><br>
+    <input type="text" id="matric" name="matric" placeholder="Matric No."><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="text" id="email" name="email" placeholder="you@example.com"><br><br>
+
+
+    <label for="year">Year of Study :</label><br>
+    <input type="radio" id="y1" name="y1" value="Year 1">
+    <label for="y1">Year 1</label><br>
+
+    <input type="radio" id="y2" name="y2" value="Year 2">
+    <label for="y2">Year 2</label><br>
+
+     <input type="radio" id="y3" name="y3" value="Year 3">
+    <label for="y3">Year 3</label><br>
+
+     <input type="radio" id="y4" name="y4" value="Year 4">
+    <label for="y4">Year 4</label><br><br>
+
+     <label for="sessions">Select your sessions (at least 3) :</label><br>
+    <input type="checkbox" id="s1" name="s1" value="Opening & Briefing">
+    <label for="s1">Opening & Briefing</label><br>
+    
+    <input type="checkbox" id="s2" name="s2" value="UI/UX Workshop">
+    <label for="s2">UI/UX Workshop</label><br>
+
+    <input type="checkbox" id="s3" name="s3" value="Hackathon Coding Battle">
+    <label for="s3">Hackathon Coding Battle</label><br>
+
+    <input type="checkbox" id="s4" name="s4" value="Pitch & Presentation">
+    <label for="s4">Pitch & Presentation</label><br>
+
+    <input type="checkbox" id="s5" name="s5" value="Judge & Award">
+    <label for="s5">Judge & Awards</label><br><br>
+
+    <label for="prog/fac">Choose a program/faculty :</label>
+    <select id="prog" name="prog">
+        <option value="se">Software Engineering</option>
+        <option value="da">Data Analytic</option>
+        <option value="mc">Mobile Computing</option>
+        <option value="mi">Maritime Informatics</option>
+        <option value="bio">Marine Biology</option>
+         <option value="mar">Marketing</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit"
+</form>
+</section>
+
+<footer>
+    <p>Copyright &copy; 2026 Fakulti Sains Komputer dan Matematik</p>
+</footer>
+
+</body>
+</html>
