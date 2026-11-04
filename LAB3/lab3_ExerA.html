@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <title>Campus Bakery Online Order</title>
+</head>
+<body>
+<!--header section-->
+    <div id="header">
+        <h1> CampusBake&reg; </h1>
+        <span>Fresh from oven!</span>
+    </div>
+    <br>
+<!--navigation bar section-->
+    <div id="nav">
+        <a href="#header">Home</a> | 
+        <a href="#content">Order</a> |  
+        <a href="#sidebar">Menu</a>
+    </div>
+
+<!--content section-->
+    <div id="content">
+        <h2>Place your order!</h2>
+        <p>Welcome to our online store! Choose your favourite from the option below &lt;3</p>
+        <p>
+            Our <strong>customers' all time favourite</strong> are <em>Cupcakes</em> and <em>Cake Slices.</em>
+            Don't forget to <a href="#sidebar">Check our price lists</a> in the sidebar. </p>
+        <!--calculate section-->
+            <div id="calculate">
+                <form oninput="total_price.value = (parseInt(cupcake_qty.value)*3) + (parseInt(slice_qty.value)*5)">
+
+                    Customers' Name : <input type="text" name="custname"
+                    placeholder="Enter your name" required autofocus>
+                    <br><br>
+
+                    Customers' Phone Number : <input type="tel" name="phoneNo"
+                    placeholder="Enter your phone number" required>
+                    <br><br>
+
+                    Customers' Email : <input type="email" name="email"
+                    placeholder="Enter your email" required>
+                    <br><br>
+
+                    Pick-up Date : <input type="date" name="date">
+                    <br><br>
+
+                    Pick-up Time : <input type="time" name="time">
+                    <br><br>
+
+                    <label for="flavour">Flavour : </label>
+                    <input type="text" id="flavour" name="flavour" list="flavour_list">
+                        <datalist id="flavour_list">
+                            <option value = "Matcha">
+                            <option value = "Chocolate">
+                            <option value = "Pistachio">
+                            <option value = "Blueberry">
+                            <option value = "Strawberry">
+                        </datalist>
+                    <br><br>
+
+                    Icing Colour :<input type="color" name="icing"> 
+                    <br><br>
+                   
+                    Sweetness level (1-5) : <input type="range" name="level" min="1" max="5" step="1">
+
+                    <div>
+                        <p><strong>Quantity &amp; Total Price</strong></p>
+
+                        <label for="cupcake_qty">Cupcakes (RM3.00/ea) :</label><br>
+                        <input type="number" id="cupcake_qty" name="cupcake_qty" min="0" value="0">
+                        <br><br>
+                        <label for="slice_qty">Cake Slices (RM5.00/ea) :</label><br>
+                        <input type="number" id="slice_qty" name="slice_qty" min="0" value="0">
+                        <p>
+                        <strong>Total Price (RM) : </strong>   
+                        <output id="total_price" name="total_price">0</output> 
+                        </p>     
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    </div>
+
+<!--sidebar section-->
+    <div id="sidebar">
+        <h3>Price List</h3>
+        <ul>
+            <li>Cupcakes : RM3.00/ea</li>
+            <li>Cake Slices : RM5.00/ea</li>
+            <li>Bulk discount&nbsp;: Orders &gt; 10 pieces get a free drink!</li>
+        </ul>
+    </div>
+
+<!--footer section-->
+    <div id="footer">
+       <p>Payment Options : We accept cash, QR, e-Wallet and euros(&euro;) </p>
+       <p>&copy; 2026 CampusBake&reg;</p>
+    </div>
+
+</body>
+</html>
