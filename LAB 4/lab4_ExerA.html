@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visit Terengganu</title>
+        <link rel="stylesheet" href="style.css">
+        <style type="text/css">
+            header {
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Visit Terengganu 2026</h1>
+            <p>Experience Islands, Culture, and Culinary Delights</p>
+        </header>
+
+        <!--bar navigation-->
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#trip">Trip</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="destinations">
+                <h2>Must Visit in Terengganu!</h2>
+                
+                <!--destination 1-->
+                <article>
+                    <h3>Perhentian Dive Extravaganza</h3>
+                    <p>Explore the stunning marine life of Perhentian Island and discover beautiful sea creatures</p>
+                    <p class="price">
+                        Normal Price: <span class="old-price">RM 617.15</span><br>
+                        Promo Price : <span class="new-price">RM 599</span>
+                    </p>
+                </article>
+
+                <!--destination 2-->
+                <article>
+                    <h3>Tandem Paragliding at Bukit Kubus</h3>
+                    <p>Cross this off your bucket list as you fly down from Bukit Bubus with spectacular view.</p>
+                    <p class="price">
+                        Normal Price: <span class="old-price">RM 250</span><br>
+                        Promo Price : <span class="new-price">RM 199</span>
+                    </p>
+                </article> 
+
+                <!--destination 3-->
+                <article>
+                    <h3>Kuala Terengganu Heritage Tours</h3>
+                    <p>Visit the famous Crystal Mosque, Pasar Payang, and taste authentic Nasi Dagang.</p>
+                    <p class="price">
+                        Normal Price: <span class="old-price">RM 150</span><br>
+                        Promo Price : <span class="new-price">RM 99</span>
+                    </p>
+                </article>
+
+                <!--seat available-->
+                <h3>Trip Seats Availability</h3>
+                <p>Limited promotion seats available! Grab yours before they are gone.</p>
+                <label for="seats">Seats Filled:</label>
+                <meter id="seats" min="0" max="30" value="28"></meter>
+                <span> 28 / 30 Seats Taken</span>
+            </section>
+
+            <section id="video">
+                <h2>Discover Terengganu Vlog</h2>
+                <figure>
+                    <!-- Embedded Video with Fallback -->
+                    <video width="400" height="300" controls>
+                        <source src="terengganu.mp4.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Please update your browser to view this content.
+                    </video>
+                    <figcaption class="caption"><em>A Glimpse into the Beauty of Terengganu</em></figcaption>
+                </figure>
+            </section>
+
+            <section id="trip">
+                <h2>Trip Form</h2>
+                <p>Fill out the form below to register for upcoming group trips.</p>
+
+                <form action="#" method="post">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    <br><br>
+               
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    <br><br>
+                
+                    <label>Traveller Type :</label>
+                    <label><input type="radio" name="traveller" value="Student"> Student</label>
+                    <label><input type="radio" name="traveller" value="Staff"> Staff</label>
+                    <label><input type="radio" name="traveller" value="Public"> Public</label>
+                    <br><br>
+            
+                    <label>Interests :</label>
+                    <label><input type="checkbox" name="interest" value="Islands"> Islands</label>
+                    <label><input type="checkbox" name="interest" value="Food"> Food</label>
+                    <label><input type="checkbox" name="interest" value="Culture"> Culture</label>
+                    <label><input type="checkbox" name="interest" value="Nature"> Nature</label>
+                    <br><br>
+             
+                    <input type="submit" value="Submit">
+                </form>
+            </section> 
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Jabatan Pelancongan Negeri Terengganu</p>
+            <p>Contact Us: <a href="mailto:beautifulterengganumalaysia@gmail.com">beautifulterengganumalaysia@gmail.com</a></p>
+        </footer>
+    </body>
+</html>

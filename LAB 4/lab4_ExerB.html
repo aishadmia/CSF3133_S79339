@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+    <!-- 
+  Error :
+  1. (Line 9): Invalid value 'no' for list-style-type in CSS, corrected to 'none'.
+  2. (Line 17): Invalid value 'overlined' for text-decoration, corrected to 'overline'.
+  3. (Line 22): Missing dot (.) selector for class 'highlight', corrected to '.highlight'.
+  4. (Line 34): Navigation link href="menu" missed the hash symbol, corrected to href="#menu".
+  5. (Lines 42 & 46): Duplicate id="item" used on multiple elements (IDs must be unique), changed to class="item".
+  6. (Line 53): The <video> element was missing the 'controls' attribute, added controls so the video can play.
+  7. (Head section): Missing viewport <meta> tag for responsive design, added <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+  8. (Video section): Missing <figure> and <figcaption> semantic elements for the video caption.
+-->
+
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Menu Section -->
+        <section id="menu">
+            <h2>Today's Menu</h2>
+            <p id="intro">Freshly brewed coffee and local delights every day.</p>
+            
+            <article class="item">
+                <h3>Kopi Tarik</h3>
+                <p>
+                    Normal Price: <span class="old-price">RM 4.50</span><br>
+                    Promo Price: <span class="highlight">RM 3.50</span>
+                </p>
+            </article>
+
+            <article class="item">
+                <h3>Nasi Lemak</h3>
+                <p>
+                    Normal Price: <span class="old-price">RM 6.00</span><br>
+                    Promo Price: <span class="highlight">RM 5.00</span>
+                </p>
+            </article>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Watch Our Story</h2>
+            <figure>
+              
+                <video width="400" height="300" controls>
+                    <source src="cafe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Official e-Café Campus promotional video.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <h2>Customer Feedback</h2>
+            <p>We value your opinion! Please let us know about your experience.</p>
+            
+            <form action="#" method="post" class="feedback-form">
+                <div class="form-group">
+                    <label for="fullname">Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Visit Type:</label>
+                    <label><input type="radio" name="visit_type" value="Dine-in" checked> Dine-in</label>
+                    <label><input type="radio" name="visit_type" value="Take-away"> Take-away</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Favourite Items:</label>
+                    <label><input type="checkbox" name="favourite[]" value="Kopi Tarik"> Kopi Tarik</label>
+                    <label><input type="checkbox" name="favourite[]" value="Nasi Lemak"> Nasi Lemak</label>
+                    <label><input type="checkbox" name="favourite[]" value="Pastries"> Pastries</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit Feedback" class="btn-submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <address>
+            <p>&copy; 2026 e-Café Campus</p>
+            <p>Contact Us: <a href="mailto:support@ecafe.edu.my">support@ecafe.edu.my</a></p>
+        </address>
+    </footer>
+</body>
+</html>
