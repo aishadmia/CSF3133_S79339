@@ -1,0 +1,121 @@
+/**
+Error 1 (shop.css, Line 2): Font name typo 'Robotto' — should be 'Roboto'.
+
+Error 2 (shop.css, Line 4): Missing hyphen in no repeat — should be no-repeat.
+
+Error 3 (shop.css, Line 5): Property typo bacground-position — should be background-position.
+
+Error 4 (shop.css, Line 18): display: inline; on li a prevents vertical padding from working properly — should be display: block;.
+
+Error 5 (shop.css, Line 23): Invalid pseudo-class syntax li:a:hover — should be li a:hover.
+
+Error 6 (shop.css, Line 27): Invalid property value border-collapse: collapsed; — should be border-collapse: collapse;.
+
+Error 7 (shop.css, Line 34): :nth-child(2) only styles the 2nd row — should be :nth-child(even) for alternating rows.
+
+Error 8 (shop.css, Line 37): Invalid pseudo-class tr:hovered — should be tr:hover.
+
+Error 9 (shop.css, Line 45): Missing semicolon ; after background-color: #f1f1f1 **/
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+#products {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+#products td, #products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#products tr:hover {
+    background-color: #ddd;
+}
+
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#products td.price {
+    text-align: right;
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 14px;
+    margin-top: 40px;
+}
